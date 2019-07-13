@@ -6,9 +6,9 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__logo">
+      <a class="page-header__logo">
         <img class="page-header__logo-image" src="#" alt="Логотип магазина 'Мишка'">
-      </div>
+      </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
@@ -36,39 +36,42 @@
         <h1 class="main-headline">Каталог товаров</h1>
       </header>
       <ul class="catalog-list">
-        <li class="catalog-item">
-          <img class="image catalog-item" src="#">
-          <div class="catalog-item-wrraper">
+        <li class="catalog-item-wrraper">
+          <a href="#" class="catalog-item">
+            <img class="catalog-item-image" src="#">
             <p class="catalog-item__headline">Зайчик-попрыгайчик</p>
             <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
-          </div>
-          <div class="catalog-item-wrraper">
-            <span class="catalog-item__price">1200 руб.</span>
-          </div>
+            <div class="catalog-item__wrraper">
+              <span class="catalog-item__price">1200 руб.</span>
+              <img src="#" class="basket catalog-item__image-basket">
+            </div>
+          </a>
         </li>
-        <li class="catalog-item">
-          <img class="catalog-item__image" src="#">
-          <div class="catalog-item-wrraper">
+        <li class="catalog-item-wrraper">
+          <a href="#" class="catalog-item">
+            <img class="catalog-item__image" src="#">
             <p class="catalog-item__headline">Корзинка для белья</p>
             <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
-          </div>
-          <div class="catalog-item-wrraper">
-            <span class="catalog-item__price">690 руб.</span>
-          </div>
+            <div class="catalog-item__wrapper">
+              <span class="catalog-item__price">690 руб.</span>
+              <img class="basket catalog-item__image-basket" src="#">
+            </div>
+          </a>
         </li>
-        <li class="catalog-item">
-          <img class="catalog-item__image" src="#">
-          <div class="catalog-item-wrraper">
+        <li class="catalog-item-wrraper">
+          <a href="#" class="catalog-item">
+            <img class="catalog-item__image" src="#">
             <p class="catalog-item__headline">Большая корзинка для игрушек</p>
             <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
-          </div>
-          <div class="catalog-item-wrraper">
-            <span class="catalog-item__price">1500 руб.</span>
-          </div>
+            <div class="catalog-item__wrraper">
+              <span class="catalog-item__price">1500 руб.</span>
+              <img class="basket catalog-item__image-basket">
+            </div>
+          </a>
         </li>
       </ul>
     </main>
-    <footer class="footter-page">
+    <footer class="footer-page">
       <ul class="footer-social">
         <li>
           <a href="#" class="footer-social__instagram visually-hidden">
