@@ -6,9 +6,9 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__logo">
+      <a class="page-header__logo">
         <img class="page-header__logo-image" src="#" alt="Логотип магазина 'Мишка'">
-      </div>
+      </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
@@ -23,12 +23,11 @@
           <ul class="main-nav__list user-list">
             <li class="user-list__item-wrraper">
               <a class="user-list__item" href="#">
-     Поиск по сайту
+                Поиск по сайту
               </a>
             </li>
             <li class="user-list__item-wrraper">
               <a class="user-list__item" href="#">
-                <img src="#" class="basket user-list__basket">
                 Корзина: пока пуста
               </a>
             </li>
@@ -43,30 +42,34 @@
         </header>
         <ul class="offers-list offers-item">
           <li class="offers-item__wrraper">
-            <a class="offers-item__interior" href="#">Предметы интерьера</a>
-            <img class="offers-item__lamp-image" src="#">
+            <a class="offers-item__interior" href="catalog.html">
+              Предметы интерьера
+              <img class="offers-item__lamp-image" src="#">
+            </a>
           </li>
           <li class="offers-item">
-            <a class="offers-item__wrraper" href="#">Детские игрушки</a>
-            <img class="offers-item__toy-image" src="#">
+            <a class="offers-item__wrraper" href="catalog.html">
+              Детские игрушки
+              <img class="offers-item__toy-image" src="#">
+            </a>
           </li>
         </ul>
       </section>
       <section class="hit-item">
-        <h2 class="headline hit-item__headline">Вязаные корзинки</h2>
-        <h1 class="subtitle hit-item__subtitle">товар недели</h1>
+        <p class="headline hit-item__headline">Вязаные корзинки</p>
+        <h2 class="subtitle hit-item__subtitle">товар недели</h2>
         <p class="hit-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
         <table class="hit-item__list">
           <tr>
-            <td class="hit-item__list-value">Цвет:</td>
+            <th class="hit-item__list-value">Цвет:</th>
             <td class="hit-item__list-field">&#171;Тиффани&#187;/серый</td>
           </tr>
           <tr>
-            <td class="hit-item__list-value">Диаметр:</td>
+            <th class="hit-item__list-value">Диаметр:</th>
             <td class="hit-item__list-field">25 см</td>
           </tr>
           <tr>
-            <td class="hit-item__list-value">Высота:</td>
+            <th class="hit-item__list-value">Высота:</th>
             <td class="hit-item__list-field">15 см</td>
           </tr>
         </table>
@@ -83,48 +86,48 @@
         <ul class="advantages-list">
           <li class="advantages-item">
             <img class="flower advantages-item__image-flower" src="#">
-            <h3 class="advantages-item__description">Экологически чистые материалы</h3>
+            <p class="advantages-item__description">Экологически чистые материалы</p>
           </li>
           <li class="advantages-item">
             <img class="money advantages-item__image-money" src="#">
-            <h3 class="advantages-item__description">Скандинавский стиль по российской цене</h3>
+            <p class="advantages-item__description">Скандинавский стиль по российской цене</p>
           </li>
           <li class="advantages-item">
             <img class="heart advantages-item__image-heart" src="#">
-            <h3 class="advantages-item__description">Увеличивает лайки на фотографиях</h3>
+            <p class="advantages-item__description">Увеличивает лайки на фотографиях</p>
           </li>
           <li class="advantages-item">
             <img class="yarn advantages-item__yarn" src="#">
-            <h3 class="advantages-item__description">Связано вручную с любовью и умилением</h3>
+            <p class="advantages-item__description">Связано вручную с любовью и умилением</p>
           </li>
           <li class="advantages-item">
             <img class="rocket advantages-item__rocket" src="#">
-            <h3 class="advantages-item__description">Поддержка отечественного производителя</h3>
+            <p class="advantages-item__description">Поддержка отечественного производителя</p>
           </li>
           <li class="advantages-item">
             <img class="present advantages-item__image-present" src="#">
-            <h3 class="advantages-item__description">Поставляется в подарочной упаковке</h3>
+            <p class="advantages-item__description">Поставляется в подарочной упаковке</p>
           </li>
         </ul>
       </section>
     </main>
-    <footer class="footter-page">
+    <footer class="footer-page">
       <ul class="footer-social">
         <li>
-          <a href="#" class="footer-social__instagram visually-hidden">
-            instagram
+          <a href="#" class="footer-social__instagram">
+            <span class="visually-hidden">instagram</span>
             <img class="footer-social__instagram-image" src="#">
           </a>
         </li>
         <li>
-          <a href="#" class="footer-social__fb visually-hidden">
-            facebook
+          <a href="#" class="footer-social__fb">
+            <span class="visually-hidden">facebook</span>
             <img class="footer-social__fb-image" src="#">
           </a>
         </li>
         <li>
-          <a href="#" class="footer-social__twitter visually-hidden">
-            twitter
+          <a href="#" class="footer-social__twitter">
+            <span class="visually-hidden">twitter</span>
             <img class="footer-social__twitter-image" src="#">
           </a>
         </li>
@@ -132,8 +135,9 @@
       <div class="footer-copyright">
         <span class="footer-copyright__value">
           Разработано
-          <a class="footer-copyright__field" href="#"></a>
-          <img src="#">
+          <a class="footer-copyright__field" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="#">
+          </a>
         </span>
       </div>
     </footer>

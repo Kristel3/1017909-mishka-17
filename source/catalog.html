@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="#" alt="Логотип магазина 'Мишка'">
       </a>
       <nav class="main-nav">
@@ -36,58 +36,64 @@
         <h1 class="main-headline">Каталог товаров</h1>
       </header>
       <ul class="catalog-list">
-        <li class="catalog-item-wrraper">
+        <li>
           <a href="#" class="catalog-item">
             <img class="catalog-item-image" src="#">
-            <p class="catalog-item__headline">Зайчик-попрыгайчик</p>
-            <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
-            <div class="catalog-item__wrraper">
-              <span class="catalog-item__price">1200 руб.</span>
-              <img src="#" class="basket catalog-item__image-basket">
-            </div>
+            <h2 class="catalog-item__headline">Зайчик-попрыгайчик</h2>
           </a>
+          <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
+          <div class="catalog-item__wrraper">
+            <span class="catalog-item__price">1200 руб.</span>
+            <a href="#" class="basket catalog-item__basket visually-hidden">
+              Добавить в корзину
+            </a>
+          </div>
         </li>
-        <li class="catalog-item-wrraper">
+        <li>
           <a href="#" class="catalog-item">
             <img class="catalog-item__image" src="#">
-            <p class="catalog-item__headline">Корзинка для белья</p>
-            <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
-            <div class="catalog-item__wrapper">
-              <span class="catalog-item__price">690 руб.</span>
-              <img class="basket catalog-item__image-basket" src="#">
-            </div>
+            <h2 class="catalog-item__headline">Корзинка для белья</h2>
           </a>
+          <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
+          <div class="catalog-item__wrapper">
+            <span class="catalog-item__price">690 руб.</span>
+            <a href="#" class="basket catalog-item__basket visually-hidden">
+              Добавить в корзину
+            </a>
+          </div>
         </li>
-        <li class="catalog-item-wrraper">
+        <li>
           <a href="#" class="catalog-item">
             <img class="catalog-item__image" src="#">
-            <p class="catalog-item__headline">Большая корзинка для игрушек</p>
-            <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
-            <div class="catalog-item__wrraper">
-              <span class="catalog-item__price">1500 руб.</span>
-              <img class="basket catalog-item__image-basket">
-            </div>
+            <h2 class="catalog-item__headline">Большая корзинка для игрушек</h2>
           </a>
+          <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
+          <div class="catalog-item__wrraper">
+            <span class="catalog-item__price">1500 руб.</span>
+            <a href="#" class="basket catalog-item__basket visually-hidden">
+              Добавить в корзину
+            </a>
+          </div>
         </li>
       </ul>
     </main>
     <footer class="footer-page">
       <ul class="footer-social">
         <li>
-          <a href="#" class="footer-social__instagram visually-hidden">
-            instagram
+          <a href="#" class="footer-social__instagram">
+            <span class="visually-hidden">instagram</span>
             <img class="footer-social__instagram-image" src="#">
           </a>
         </li>
         <li>
-          <a href="#" class="footer-social__fb visually-hidden">
-            facebook
+          <a href="#" class="footer-social__fb">
+            <span class="visually-hidden">facebook</span>
             <img class="footer-social__fb-image" src="#">
           </a>
         </li>
         <li>
-          <a href="#" class="footer-social__twitter visually-hidden">
-            twitter
+          <a href="#" class="footer-social__twitter">
+            <span class="visually-hidden">twitter</span>
             <img class="footer-social__twitter-image" src="#">
           </a>
         </li>
@@ -95,8 +101,9 @@
       <div class="footer-copyright">
         <span class="footer-copyright__value">
           Разработано
-          <a class="footer-copyright__field" href="#"></a>
-          <img src="#">
+          <a class="footer-copyright__field" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="#">
+          </a>
         </span>
       </div>
     </footer>
