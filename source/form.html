@@ -3,59 +3,54 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
-  </head>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">  </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="#" alt="Логотип магазина 'Мишка'">
+        <img class="page-header__logo-image" src="../source/less/img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
+        <a href="#" class="main-nav__toggle" aria-label="Открыть меню"></a>
+        <div class="main-nav__wrraper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item-wrraper">
-              <a class="site-list__item" href="#">Каталог товаров</a>
+            <li class="main-nav__item-wrraper">
+              <a class="main-nav__item" href="#">Каталог товаров</a>
             </li>
-            <li class="site-list__item-wrraper">
-              <a class="site-list__item" href="#">Вязание на заказ</a>
+            <li class="main-nav__item-wrraper">
+              <a class="main-nav__item" href="#">Вязание на заказ</a>
             </li>
           </ul>
           <ul class="main-nav__list user-list">
-            <li class="user-list__item-wrraper">
-              <a class="user-list__item" href="#">Поиск по сайтy</a>
+            <li class="main-nav__item-wrraper">
+              <a class="main-nav__item search" href="#">Поиск по сайту</a>
             </li>
-            <li class="user-list__item-wrraper">
-              <a class="user-list_item" href="#">Корзина: пока пуста</a>
+            <li class="main-nav__item-wrraper">
+              <a class="main-nav__item basket" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <footer class="footter-page">
-      <ul class="footer-social">
-        <li>
-          <a href="#" class="footer-social__instagram">
-            <span class="visually-hidden">instagram</span>
-            <img class="footer-social__instagram-image" src="#">
-          </a>
-        </li>
-        <li>
-          <a href="#" class="footer-social__fb">
-            <span class="visually-hidden">facebook</span>
-            <img class="footer-social__fb-image" src="#">
-          </a>
-        </li>
-        <li>
-          <a href="#" class="footer-social__twitter">
-            <span class="visually-hidden">twitter</span>
-            <img class="footer-social__twitter-image" src="#">
-          </a>
-        </li>
-      </ul>
+    <footer class="footer-page">
+      <section class="social-list">
+        <a href="#" class="social-list__item">
+          <span class="visually-hidden">instagram</span>
+          <igm src="../source/less/img/icon-insta.svg">
+        </a>
+        <a href="#" class="social-list__item">
+          <span class="visually-hidden">facebook</span>
+          <img src="../source/less/img/icon-fb.svg">
+        </a>
+        <a href="#" class="social-list__item">
+          <span class="visually-hidden">twitter</span>
+          <img src="../source/less/img/icon-twitter.svg">
+        </a>
+      </section>
       <div class="footer-copyright">
         <a class="footer-copyright__develop" href="https://htmlacademy.ru/intensive/adaptive">
-          Разработано
-          <img src="#" class="footer-copyright__develop-logo">
+        Разработано
+        <img src="../source/less/img/logo-htmlacademy.svg" class="footer-copyright__develop-logo">
         </a>
       </div>
     </footer>
