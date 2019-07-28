@@ -4,16 +4,17 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">  </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="../source/less/img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'">
+      <img class="page-header__logo-image" src="../source/img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'">
       </a>
       <nav class="main-nav">
         <a href="#" class="main-nav__toggle" aria-label="Открыть меню"></a>
         <div class="main-nav__wrraper">
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list main-nav__site">
             <li class="main-nav__item-wrraper">
               <a class="main-nav__item" href="#">Каталог товаров</a>
             </li>
@@ -21,7 +22,7 @@
               <a class="main-nav__item" href="#">Вязание на заказ</a>
             </li>
           </ul>
-          <ul class="main-nav__list user-list">
+          <ul class="main-nav__list main-nav__user">
             <li class="main-nav__item-wrraper">
               <a class="main-nav__item search" href="#">Поиск по сайту</a>
             </li>
@@ -39,7 +40,7 @@
       <ul class="catalog">
         <li class="catalog__item">
           <a href="#" class="catalog__item-link">
-            <img class="catalog__item-link-image" src="../source/less/img/photo-hare-mobile@1x.jpg">
+            <img class="catalog__item-link-image" src="../source/img/photo-hare-mobile@1x.jpg">
             <h2 class="catalog__item-link-headline">Зайчик-попрыгайчик</h2>
           </a>
           <p class="catalog__item-description">Рост 30 см, вес 200 г</p>
@@ -50,7 +51,7 @@
         </li>
         <li class="catalog__item">
           <a href="#" class="catalog__item-link">
-            <img class="catalog__item-link-image" src="../source/less/img/photo-bowl-mobile@1x.jpg">
+            <img class="catalog__item-link-image" src="../source/img/photo-bowl-mobile@1x.jpg">
             <h2 class="catalog__item-link-headline">Корзинка для белья</h2>
           </a>
           <p class="catalog__item-description">Диаметр 15 см, высота 10 см</p>
@@ -61,7 +62,7 @@
         </li>
         <li class="catalog__item">
           <a href="#" class="catalog__item-link">
-            <img class="catalog__item-link-image" src="../source/less/img/photo-toys-mobile@1x.jpg">
+            <img class="catalog__item-link-image" src="../source/img/photo-toys-mobile@1x.jpg">
             <h2 class="catalog__item-link-headline">Большая корзинка для игрушек</h2>
           </a>
           <p class="catalog__item-description">Диаметр 30 см, высота 30 см</p>
@@ -76,21 +77,21 @@
       <section class="social-list">
         <a href="#" class="social-list__item">
           <span class="visually-hidden">instagram</span>
-          <img class="footer-social__instagram-image" src="../source/less/img/icon-insta.svg">
+          <img class="footer-social__instagram-image" src="../source/img/icon-insta.svg">
         </a>
         <a href="#" class="social-list__item">
           <span class="visually-hidden">facebook</span>
-          <img src="../source/less/img/icon-fb.svg">
+          <img src="../source/img/icon-fb.svg">
         </a>
         <a href="#" class="social-list__item">
           <span class="visually-hidden">twitter</span>
-          <img src="../source/less/img/icon-twitter.svg">
+          <img src="../source/img/icon-twitter.svg">
         </a>
       </section>
       <div class="footer-copyright">
         <a class="footer-copyright__develop" href="https://htmlacademy.ru/intensive/adaptive">
         Разработано
-        <img src="../source/less/img/logo-htmlacademy.svg">
+        <img src="../source/img/logo-htmlacademy.svg">
         </a>
       </div>
     </footer>
