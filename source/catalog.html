@@ -3,53 +3,54 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
-  </head>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   <body>
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="#" alt="Логотип магазина 'Мишка'">
+      <img class="page-header__logo-image" src="../source/img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li>
-              <a class="site-list__item" href="#">Каталог товаров</a>
+        <a href="#" class="main-nav__toggle" aria-label="Открыть меню"></a>
+        <div class="main-nav__wrraper">
+          <ul class="main-nav__list main-nav__site">
+            <li class="main-nav__item-wrraper">
+              <a class="main-nav__item" href="#">Каталог товаров</a>
             </li>
-            <li>
-              <a class="site-list__item" href="#">Вязание на заказ</a>
+            <li class="main-nav__item-wrraper">
+              <a class="main-nav__item" href="#">Вязание на заказ</a>
             </li>
           </ul>
-          <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-              <a class="user-list__search" href="#">Поиск по сайту</a>
+          <ul class="main-nav__list main-nav__user">
+            <li class="main-nav__item-wrraper">
+              <a class="main-nav__item search" href="#">Поиск по сайту</a>
             </li>
-            <li class="user-list__item">
-              <a class="user-list__basket" href="#">Корзина: пока пуста</a>
+            <li class="main-nav__item-wrraper">
+              <a class="main-nav__item basket" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <main class="main-page">
-      <header class="page-header">
-        <h1 class="main-headline">Каталог товаров</h1>
+    <main class="page-main">
+      <header class="catalog catalog__header">
+        <h1 class="headline-page catalog__header-headline">Каталог товаров</h1>
       </header>
       <ul class="catalog">
         <li class="catalog__item">
           <a href="#" class="catalog__item-link">
-            <img class="catalog__item-link-image" src="#">
+            <img class="catalog__item-link-image" src="../source/img/photo-hare-mobile@1x.jpg">
             <h2 class="catalog__item-link-headline">Зайчик-попрыгайчик</h2>
           </a>
           <p class="catalog__item-description">Рост 30 см, вес 200 г</p>
           <span class="catalog__item-price">1200 руб.</span>
           <a href="#" class="basket catalog__item-basket">
-            <span clas="visually-hidden">Добавить в корзину</span>
+            <span class="visually-hidden">Добавить в корзину</span>
           </a>
         </li>
         <li class="catalog__item">
           <a href="#" class="catalog__item-link">
-            <img class="catalog__item-link-image" src="#">
+            <img class="catalog__item-link-image" src="../source/img/photo-bowl-mobile@1x.jpg">
             <h2 class="catalog__item-link-headline">Корзинка для белья</h2>
           </a>
           <p class="catalog__item-description">Диаметр 15 см, высота 10 см</p>
@@ -60,7 +61,7 @@
         </li>
         <li class="catalog__item">
           <a href="#" class="catalog__item-link">
-            <img class="catalog__item-link-image" src="#">
+            <img class="catalog__item-link-image" src="../source/img/photo-toys-mobile@1x.jpg">
             <h2 class="catalog__item-link-headline">Большая корзинка для игрушек</h2>
           </a>
           <p class="catalog__item-description">Диаметр 30 см, высота 30 см</p>
@@ -72,30 +73,24 @@
       </ul>
     </main>
     <footer class="footer-page">
-      <ul class="footer-social">
-        <li>
-          <a href="#" class="footer-social__instagram">
+      <section class="footer-page__social">
+        <a href="#" class="footer-page__social-item">
           <span class="visually-hidden">instagram</span>
-          <img class="footer-social__instagram-image" src="#">
-          </a>
-        </li>
-        <li>
-          <a href="#" class="footer-social__fb">
+          <img src="../source/img/icon-insta.svg">
+        </a>
+        <a href="#" class="footer-page__social-item">
           <span class="visually-hidden">facebook</span>
-          <img class="footer-social__fb-image" src="#">
-          </a>
-        </li>
-        <li>
-          <a href="#" class="footer-social__twitter">
+          <img src="../source/img/icon-fb.svg">
+        </a>
+        <a href="#" class="footer-page__social-item">
           <span class="visually-hidden">twitter</span>
-          <img class="footer-social__twitter-image" src="#">
-          </a>
-        </li>
-      </ul>
-      <div class="footer-copyright">
-        <a class="footer-copyright__develop" href="https://htmlacademy.ru/intensive/adaptive">
-        Разработано
-        <img src="#" class="footer-copyright__develop-logo">
+          <img src="../source/img/icon-twitter.svg">
+        </a>
+      </section>
+      <div class="footer-page__copyright">
+        <a class="footer-page__copyright-develop" href="https://htmlacademy.ru/intensive/adaptive">
+          Разработано
+          <img src="../source/img/logo-htmlacademy.svg" class="footer-page__copyright-logo">
         </a>
       </div>
     </footer>

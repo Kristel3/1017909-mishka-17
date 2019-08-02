@@ -3,59 +3,54 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
-  </head>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   <body>
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="#" alt="Логотип магазина 'Мишка'">
+        <img class="page-header__logo-image" src="../source/img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item-wrraper">
-              <a class="site-list__item" href="#">Каталог товаров</a>
+        <a href="#" class="main-nav__toggle" aria-label="Открыть меню"></a>
+        <div class="main-nav__wrraper">
+          <ul class="main-nav__list main-nav__site">
+            <li class="main-nav__item-wrraper">
+              <a class="main-nav__item" href="#">Каталог товаров</a>
             </li>
-            <li class="site-list__item-wrraper">
-              <a class="site-list__item" href="#">Вязание на заказ</a>
+            <li class="main-nav__item-wrraper">
+              <a class="main-nav__item" href="#">Вязание на заказ</a>
             </li>
           </ul>
-          <ul class="main-nav__list user-list">
-            <li class="user-list__item-wrraper">
-              <a class="user-list__item" href="#">Поиск по сайтy</a>
+          <ul class="main-nav__list main-nav__user">
+            <li class="main-nav__item-wrraper">
+              <a class="main-nav__item search" href="#">Поиск по сайту</a>
             </li>
-            <li class="user-list__item-wrraper">
-              <a class="user-list_item" href="#">Корзина: пока пуста</a>
+            <li class="main-nav__item-wrraper">
+              <a class="main-nav__item basket" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <footer class="footter-page">
-      <ul class="footer-social">
-        <li>
-          <a href="#" class="footer-social__instagram">
-            <span class="visually-hidden">instagram</span>
-            <img class="footer-social__instagram-image" src="#">
-          </a>
-        </li>
-        <li>
-          <a href="#" class="footer-social__fb">
-            <span class="visually-hidden">facebook</span>
-            <img class="footer-social__fb-image" src="#">
-          </a>
-        </li>
-        <li>
-          <a href="#" class="footer-social__twitter">
-            <span class="visually-hidden">twitter</span>
-            <img class="footer-social__twitter-image" src="#">
-          </a>
-        </li>
-      </ul>
-      <div class="footer-copyright">
-        <a class="footer-copyright__develop" href="https://htmlacademy.ru/intensive/adaptive">
+    <footer class="footer-page">
+      <section class="footer-page__social">
+        <a href="#" class="footer-page__social-item">
+          <span class="visually-hidden">instagram</span>
+          <img src="../source/img/icon-insta.svg">
+        </a>
+        <a href="#" class="footer-page__social-item">
+          <span class="visually-hidden">facebook</span>
+          <img src="../source/img/icon-fb.svg">
+        </a>
+        <a href="#" class="footer-page__social-item">
+          <span class="visually-hidden">twitter</span>
+          <img src="../source/img/icon-twitter.svg">
+        </a>
+      </section>
+      <div class="footer-page__copyright">
+        <a class="footer-page__copyright-develop" href="https://htmlacademy.ru/intensive/adaptive">
           Разработано
-          <img src="#" class="footer-copyright__develop-logo">
+          <img src="../source/img/logo-htmlacademy.svg" class="footer-page__copyright-logo">
         </a>
       </div>
     </footer>
