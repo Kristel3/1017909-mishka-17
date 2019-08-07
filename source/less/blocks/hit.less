@@ -1,16 +1,22 @@
 .hit {
+  position: relative;
   padding: 34px 32px;
 }
 .hit__headline {
   margin-bottom: 8px;
 }
+.hit__wrraper {
+  width: 282px;
+}
 .hit__description {
+  margin: 30px 0 34px;
   font-size: 15px;
   font-weight: normal;
   line-height: 1.6;
   text-align: left;
 }
 .hit__price {
+  margin: 29px 0 48px;
   font-size: 17px;
   font-weight: bold;
   line-height: 1.41;
@@ -18,9 +24,7 @@
   color: #444444;
 }
 .hit__button {
-  display: block;
-  width: 100%;
-  padding: 20px 0;
+  padding: 18px 83px;
 }
 .hit__subtitle {
   font-size: 17px;
@@ -32,3 +36,83 @@
   margin-bottom: 30px;
 }
 
+
+@media (min-width: @tablet-width) {
+  .hit {
+    position: relative;
+    padding: 43px 52px;
+  }
+
+  .hit::before {
+    content: "";
+    width: 333px;
+    height: 404px;
+    background: url("../img/triple-set-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    right: 53px;
+    top: 140px;
+  }
+
+  .hit__price {
+    margin-bottom: 57px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .hit__subtitle {
+    line-height: 1;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 43px;
+    right: 80px;
+    width: 70px;
+  }
+
+  .hit__description {
+    margin: 55px 0 54px;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 1.76;
+    text-align: left;
+  }
+
+  .hit__button {
+    padding: 18px 99px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hit {
+    padding: 124px 0 73px 225px;
+  }
+
+  .hit__subtitle {
+    top: 132px;
+    left: 97px;
+  }
+
+  .hit::before {
+    content: "";
+    width: 525px;
+    height: 636px;
+    background: url("../img/triple-set-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    right: 53px;
+    top: 54px;
+  }
+
+  .hit__headline {
+    margin: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hit__price {
+    margin-bottom: 34px;
+  }
+}

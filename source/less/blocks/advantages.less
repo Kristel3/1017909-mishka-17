@@ -17,3 +17,23 @@
 .advantages__item-image {
   margin-left: 8px;
 }
+
+@media (min-width: @tablet-width) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    width: 350px;
+  }
+  .advantages__item-description {
+    width: 248px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages {
+    margin-left: 225px;
+  }
+}

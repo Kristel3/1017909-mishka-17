@@ -1,5 +1,5 @@
 .catalog__header-headline {
-  padding: 76px 40px 72px;
+  padding: 76px 0 72px;
   background: #f1f1f1;
 }
 .catalog {
@@ -32,4 +32,55 @@
   font-weight: bold;
   line-height: 1.6;
   text-align: left;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog__header-headline {
+    padding: 106px 0 78px;
+  }
+
+  .catalog__item-link {
+    display: flex;
+  }
+
+  .catalog__item {
+    position: relative;
+    display: flex;
+  }
+
+  .catalog__wrraper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog__header-headline {
+    margin-bottom: 111px;
+    font-family: 20px;
+    line-height: 1.2;
+  }
+
+  .catalog__item-description {
+    font-size: 15px;
+    line-height: 2;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .catalog__item {
+    flex-direction: column;
+  }
+
+  .catalog__item-link {
+    flex-direction: column;
+  }
+
+  .catalog__item-price {
+    font-size: 17px;
+    line-height: 1.41;
+  }
 }

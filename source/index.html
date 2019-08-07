@@ -15,64 +15,70 @@
         <a class="main-nav__toggle" href="#" aria-label="Открыть меню"></a>
         <div class="main-nav__wrraper">
           <ul class="main-nav__list main-nav__site">
-            <li class="main-nav__item-wrraper">
+            <li class="main-nav__site-wrraper">
               <a class="link main-nav__item" href="#">Каталог товаров</a>
             </li>
-            <li class="main-nav__item-wrraper">
+            <li class="main-nav__site-wrraper">
               <a class="link main-nav__item" href="#">Вязание на заказ</a>
             </li>
           </ul>
           <ul class="main-nav__list main-nav__user">
-            <li class="main-nav__item-wrraper">
-              <a class="link main-nav__item search" href="#">
+            <li class="main-nav__user-wrraper main-nav__search">
+              <a class="link main-nav__item" href="#">
                 Поиск по сайту
               </a>
             </li>
-            <li class="main-nav__item-wrraper">
-              <a class="link main-nav__item basket" href="#">
+            <li class="main-nav__user-wrraper main-nav__basket">
+              <a class="link main-nav__item" href="#">
                 Корзина: пока пуста
               </a>
             </li>
           </ul>
         </div>
+        <div class="main-nav__list main-nav__offers">
+          <a href="#" class="main-nav__offers-item">Новые поступления</a>
+          <a href="#" class="main-nav__offers-item">Распродажа</a>
+        </div>
       </nav>
+    <span class="page-header__delivery">Бесплатная доставка по России</span>
     </header>
     <main class="page-main">
       <header class="offers offers__header">
-        <h1 class="headline-page offers__header-headline">Милые штуки ручной работы для дома</h1>
+        <h1 class="headline-page headline offers__header-headline">Милые штуки ручной работы для дома</h1>
       </header>
       <div class="offers offers__list">
         <a class="offers__item offers__interior" href="catalog.html">
-          Предметы интерьера
+          <span class="offers__item-offer">Предметы интерьера</span>
         </a>
         <a class="offers__item offers__toy" href="catalog.html">
-          Детские игрушки
+          <span class="offers__item-offer">Детские игрушки</span>
         </a>
       </div>
       <section class="hit">
-        <h3 class="hit__headline">Вязаные корзинки</h3>
+        <h3 class="headline hit__headline">Вязаные корзинки</h3>
         <h2 class="visually-hidden">товар недели</h2>
         <span class="hit__subtitle">товар недели</span>
-        <p class="hit__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
-        <table class="hit__parameters parameters">
-          <tr class="parameters__item">
-            <th class="parameters__item-cell parameters__item-column-first">Цвет:</th>
-            <td class="parameters__item-cell parameters__item-column-two">&#171;Тиффани&#187;/серый</td>
-          </tr>
-          <tr class="parameters__item">
-            <th class="parameters__item-cell parameters__item-column-first">Диаметр:</th>
-            <td class="parameters__item-cell parameters__item-column-two">25 см</td>
-          </tr>
-          <tr class="parameters__item">
-            <th class="parameters__item-cell parameters__item-column-first">Высота:</th>
-            <td class="parameters__item-cell parameters__item-column-two">15 см</td>
-          </tr>
-        </table>
-        <img class="hit__image" src="../source/img/triple-set-mobile@1x.jpg">
-        <p class="hit__price">
-          Цена: 990 руб.
-        </p>
-        <a class="button hit__button" href="#">заказать</a>
+        <div class="hit__wrraper">
+          <p class="hit__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+          <table class="hit__parameters parameters">
+            <tr class="parameters__item">
+              <th class="parameters__item-cell parameters__item-column-first">Цвет:</th>
+              <td class="parameters__item-cell parameters__item-column-two">&#171;Тиффани&#187;/серый</td>
+            </tr>
+            <tr class="parameters__item">
+              <th class="parameters__item-cell parameters__item-column-first">Диаметр:</th>
+              <td class="parameters__item-cell parameters__item-column-two">25 см</td>
+            </tr>
+            <tr class="parameters__item">
+              <th class="parameters__item-cell parameters__item-column-first">Высота:</th>
+              <td class="parameters__item-cell parameters__item-column-two">15 см</td>
+            </tr>
+          </table>
+          <p class="hit__price">
+            Цена: 990 руб.
+          </p>
+          <a class="button hit__button" href="#">заказать</a>
+        </div>
       </section>
       <div class="line-zigzag"></div>
       <section class="advantages">
@@ -106,24 +112,25 @@
       </section>
     </main>
     <footer class="footer-page">
+      <img class="footer__logo" src="img/logo-footer.svg" width="102" height="34">
       <section class="footer-page__social">
         <a href="#" class="footer-page__social-item">
           <span class="visually-hidden">instagram</span>
-          <img src="../source/img/icon-insta.svg">
+          <img src="img/icon-insta.svg">
         </a>
         <a href="#" class="footer-page__social-item">
           <span class="visually-hidden">facebook</span>
-          <img src="../source/img/icon-fb.svg">
+          <img src="img/icon-fb.svg">
         </a>
         <a href="#" class="footer-page__social-item">
           <span class="visually-hidden">twitter</span>
-          <img src="../source/img/icon-twitter.svg">
+          <img src="img/icon-twitter.svg">
         </a>
       </section>
       <div class="footer-page__copyright">
         <a class="footer-page__copyright-develop" href="https://htmlacademy.ru/intensive/adaptive">
           Разработано
-          <img src="../source/img/logo-htmlacademy.svg" class="footer-page__copyright-logo">
+          <img src="img/logo-htmlacademy.svg" class="footer-page__copyright-logo">
         </a>
       </div>
     </footer>
