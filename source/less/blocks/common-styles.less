@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  width: 320px;
+  min-width: 320px;
 
   font-family: "opensans", sans-serif;
   font-size: 16px;
@@ -18,11 +18,14 @@ img {
   height: auto;
 }
 .headline-page {
+  margin: 0;
   font-size: 27px;
   font-weight: bold;
   line-height: 1.11;
+  text-align: center;
 }
 .headline {
+  margin: 0;
   font-size: 25px;
   font-weight: bold;
   line-height: 1.2;
@@ -68,4 +71,22 @@ img {
 }
 .link:active {
   opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .headline,
+  .headline-page {
+    font-size: 43px;
+    font-weight: bold;
+    line-height: 1.16;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .headline-page,
+  .headline {
+    font-size: 53px;
+    font-weight: bold;
+    line-height: 1.08;
+  }
 }

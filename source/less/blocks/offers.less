@@ -4,13 +4,14 @@
   line-height: 1.26;
   text-align: left;
 }
-.offers__list {
-  margin-top: -130px;
-}
 .offers__item {
   display: block;
-  padding: 30px;
   color: #ffffff;
+}
+.offers__item-offer {
+  display: block;
+  width: 120px;
+  padding: 30px;
 }
 .offers__interior {
   position: relative;
@@ -42,13 +43,57 @@
 }
 .offers__header {
   display: block;
-  padding-top: 76px;
-  width: 320px;
+  position: relative;
   height: 373px;
   background: url("../img/hero-mobile.jpg");
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 .offers__header-headline {
+  position: relative;
+  top: 76px;
   text-align: center;
   margin: 0 39px;
+}
+
+@media (min-width: @tablet-width) {
+  .offers__header {
+    height: 626px;
+    background: url("../img/hero-tablet@1x.jpg") #f9f9f9;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 24px 52px 0;
+  }
+
+  .offers__header-headline {
+    margin: 0 115px;
+    top: 139px;
+  }
+
+  .offers__list {
+    margin-top: -120px;
+    padding: 0 52px;
+    display: flex;
+  }
+
+  .offers__interior {
+    flex-grow: 1;
+  }
+
+  .offers__toy {
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .offers__header-headline {
+    margin: 0 273px;
+    top: 161px;
+  }
+
+  .offers {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.5;
+  }
 }
