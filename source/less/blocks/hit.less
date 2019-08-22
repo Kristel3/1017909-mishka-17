@@ -1,6 +1,6 @@
 .hit {
   position: relative;
-  padding: 34px 32px;
+  padding: 24px 32px 52px;
 }
 .hit__headline {
   margin-bottom: 8px;
@@ -9,14 +9,14 @@
   width: 282px;
 }
 .hit__description {
-  margin: 30px 0 34px;
+  margin: 20px 0;
   font-size: 15px;
   font-weight: normal;
   line-height: 1.6;
   text-align: left;
 }
 .hit__price {
-  margin: 29px 0 48px;
+  margin: 20px 0 45px;
   font-size: 17px;
   font-weight: bold;
   line-height: 1.41;
@@ -24,7 +24,7 @@
   color: #444444;
 }
 .hit__button {
-  padding: 18px 83px;
+  padding: 14px 83px;
 }
 .hit__subtitle {
   font-size: 17px;
@@ -40,23 +40,17 @@
 @media (min-width: @tablet-width) {
   .hit {
     position: relative;
-    padding: 43px 52px;
+    padding: 35px 52px 63px;
   }
 
-  .hit::before {
-    content: "";
-    width: 333px;
-    height: 404px;
-    background: url("../img/triple-set-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
+  .hit__img {
     position: absolute;
     right: 53px;
     top: 140px;
   }
 
   .hit__price {
-    margin-bottom: 57px;
+    margin-bottom: 53px;
     font-size: 20px;
     line-height: 1.2;
   }
@@ -66,13 +60,13 @@
     text-align: center;
     margin: 0;
     position: absolute;
-    top: 43px;
-    right: 80px;
+    top: 46px;
+    right: 66px;
     width: 70px;
   }
 
   .hit__description {
-    margin: 55px 0 54px;
+    margin: 50px 0 40px;
     font-size: 17px;
     font-weight: normal;
     line-height: 1.76;
@@ -80,17 +74,17 @@
   }
 
   .hit__button {
-    padding: 18px 99px;
+    padding: 14px 99px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .hit {
-    padding: 124px 0 73px 225px;
+    padding: 110px 0 83px 225px;
   }
 
   .hit__subtitle {
-    top: 132px;
+    top: 122px;
     left: 97px;
   }
 
@@ -113,6 +107,10 @@
   }
 
   .hit__price {
-    margin-bottom: 34px;
+    margin-bottom: 48px;
+  }
+
+  .hit__description {
+    margin: 47px 0;
   }
 }

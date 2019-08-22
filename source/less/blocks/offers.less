@@ -1,8 +1,6 @@
 .offers {
-  font-size: 19px;
-  font-weight: bold;
-  line-height: 1.26;
-  text-align: left;
+  position: relative;
+  background: #f9f9f9;
 }
 .offers__item {
   display: block;
@@ -11,11 +9,15 @@
 .offers__item-offer {
   display: block;
   width: 120px;
-  padding: 30px;
+  padding: 29px;
 }
 .offers__interior {
   position: relative;
   background: #63d1bb;
+}
+.offers__interior:hover,
+.offers__interior:focus {
+  background: #59d5bc;
 }
 .offers__interior::after {
   content: "";
@@ -44,35 +46,61 @@
 .offers__header {
   display: block;
   position: relative;
+  top: -17px;
   height: 373px;
   background: url("../img/hero-mobile.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .offers__header-headline {
   position: relative;
-  top: 76px;
+  top: 90px;
   text-align: center;
-  margin: 0 39px;
+  margin: 0 38px;
+}
+.offers__list {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 1.26;
+  text-align: left;
+  margin-top: -90px;
+}
+
+.offers__line-zigzag {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
+  .offers__item-offer {
+    padding: 30px 30px 42px;
+  }
+
+  .offers__line-zigzag {
+    display: block;
+    position: relative;
+    z-index: 10;
+    margin-top: -12px;
+    height: 24px;
+    background: url("../img/bg-zigzag-fill.svg");
+    background-size: auto 24px;
+  }
+
   .offers__header {
+    top: 17px;
+    margin: 0;
     height: 626px;
-    background: url("../img/hero-tablet@1x.jpg") #f9f9f9;
+    background: url("../img/hero-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
-    padding: 24px 52px 0;
+    background-size: cover;
   }
 
   .offers__header-headline {
-    margin: 0 115px;
-    top: 139px;
+    margin: 0 63px;
+    top: 137px;
   }
 
   .offers__list {
-    margin-top: -120px;
-    padding: 0 52px;
+    margin: 0 52px;
     display: flex;
   }
 
@@ -87,13 +115,35 @@
 
 @media (min-width: @desktop-width) {
   .offers__header-headline {
-    margin: 0 273px;
-    top: 161px;
+    margin: 0 200px;
+    top: 112px;
   }
 
   .offers {
     font-size: 20px;
-    font-weight: normal;
     line-height: 1.5;
   }
+
+  .offers__header {
+    height: 746px;
+    background: url("../img/hero-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 24px 52px 0;
+  }
+
+  .offers__list {
+    margin-top: -140px;
+  }
+
+  .offers__item-offer {
+    padding: 35px 37px;
+  }
+
+  .offers__line-zigzag {
+    height: 34px;
+    background-size: auto 34px;
+    margin-top: -17px;
+  }
+
 }
