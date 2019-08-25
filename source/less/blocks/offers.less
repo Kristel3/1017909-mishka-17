@@ -4,6 +4,8 @@
 }
 .offers__item {
   display: block;
+  width: 320px;
+  margin: 0 auto;
   color: #ffffff;
 }
 .offers__item-offer {
@@ -46,7 +48,6 @@
 .offers__header {
   display: block;
   position: relative;
-  top: -17px;
   height: 373px;
   background: url("../img/hero-mobile.jpg");
   background-size: cover;
@@ -56,7 +57,7 @@
   position: relative;
   top: 90px;
   text-align: center;
-  margin: 0 38px;
+  margin: 0 35px;
 }
 .offers__list {
   font-size: 19px;
@@ -72,7 +73,7 @@
 
 @media (min-width: @tablet-width) {
   .offers__item-offer {
-    padding: 30px 30px 42px;
+    padding: 30px 32px;
   }
 
   .offers__line-zigzag {
@@ -100,6 +101,8 @@
   }
 
   .offers__list {
+    font-size: 20px;
+    line-height: 1.5;
     margin: 0 52px;
     display: flex;
   }
@@ -116,7 +119,7 @@
 @media (min-width: @desktop-width) {
   .offers__header-headline {
     margin: 0 200px;
-    top: 112px;
+    top: 127px;
   }
 
   .offers {
@@ -125,6 +128,7 @@
   }
 
   .offers__header {
+    margin-top: -15px;
     height: 746px;
     background: url("../img/hero-desktop@1x.jpg");
     background-repeat: no-repeat;
@@ -133,11 +137,11 @@
   }
 
   .offers__list {
-    margin-top: -140px;
+    margin-top: -125px;
   }
 
   .offers__item-offer {
-    padding: 35px 37px;
+    padding: 30px 37px;
   }
 
   .offers__line-zigzag {
