@@ -36,8 +36,26 @@
 }
 
 .catalog__wrraper-price {
+  position: relative;
   border-top: 1px solid #f1f1f1;
   margin: 0 28px;
+  &:hover,
+  &:focus {
+    path {
+      fill: #63d1bb;
+    }
+  }
+  &:active {
+    path {
+      opacity: 0.3;
+    }
+  }
+}
+
+.catalog__item-icon {
+  position: absolute;
+  top: 20px;
+  right: 0;
 }
 
 
@@ -113,7 +131,7 @@
 
 @media (min-width: @desktop-width) {
   .catalog__wrraper-description {
-    padding: 23px 25px 29px;
+    padding: 23px 60px 29px 24px;
   }
 
   .catalog__header-headline {
@@ -128,7 +146,7 @@
   }
 
   .catalog__list {
-    padding: 108px 30px;
+    padding: 113px 25px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -136,6 +154,7 @@
 
   .catalog__item {
     width: 314px;
+    min-height: 659px;
     flex-direction: column;
   }
 
@@ -150,7 +169,7 @@
   }
 
   .catalog__item-price {
-    margin-top: 40px;
+    margin-top: 24px;
     font-size: 17px;
     line-height: 1.41;
   }
